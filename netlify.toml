@@ -1,0 +1,10 @@
+[build]
+  base = "/"
+  publish = "/dist"
+  command = "echo 'rockindev.com redirect'"
+
+[[redirects]]
+  from = "/*"
+  to = "https://rockindev.com/:splat"
+  status = 301
+  force = true
